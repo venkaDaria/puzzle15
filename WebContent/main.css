@@ -1,0 +1,56 @@
+body {
+	text-align: center;
+	background: #f3f3f3; /* light light gray */ 
+	font-family: "Century Gothic"
+}
+
+div.main {
+	margin-top: 50px;
+	border: 2px solid #2F4F4F; /* dark slate gray */ 
+	background: white;
+	width: 360px;
+	display: inline-block;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+td {
+	width: 50px;
+	height: 50px;
+	font-size: 24pt;	
+}
+
+td:hover {
+	background: lightgray;
+}
+
+form {
+	display: inline-block;
+}
+
+input {
+	color: #fff;
+	background: green;
+	padding: .7em 1.5em;
+	outline: none;
+	border: 0px;
+	font-size: 12pt;
+}
+
+input:hover {
+	background: limegreen;
+}
+
+input:active {
+	background: darkgreen;
+}

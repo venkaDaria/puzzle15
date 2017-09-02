@@ -32,7 +32,7 @@ public class MoveServlet extends HttpServlet {
 		int shift = puzzle.move(wid, hid) ? 1 : 0;
 		session.setAttribute("puzzle", puzzle);
 		session.setAttribute("solved", puzzle.isSolved());
-		session.setAttribute("num", (int) session.getAttribute("num") + shift);
+		session.setAttribute("num", Integer.valueOf(session.getAttribute("num").toString()) + shift);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 body {
 	text-align: center;
-	background: #f3f3f3; /* light light gray */ 
-	font-family: "Century Gothic"
+	background: #f3f3f3; /* light light gray */
+	font-family: "Century Gothic", serif
 }
 
 div.main {
@@ -14,9 +14,7 @@ div.main {
 
 table {
 	border-collapse: collapse;
-	margin: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 30px auto;
 	border: 3px solid black;
 }
 
@@ -43,7 +41,7 @@ input {
 	background: green;
 	padding: .7em 1.5em;
 	outline: none;
-	border: 0px;
+	border: 0;
 	font-size: 12pt;
 }
 

@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Пятнашки</title>
 <link rel="stylesheet" href="main.css" />
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
 	function move(wid, hid) {
-		$.get("move?wid=" + wid + "&hid=" + hid, function(data) {
+		$.get("move?wid=" + wid + "&hid=" + hid, function() {
 			$("#table").load("part.jsp");
 			$("#winTitle").load("part2.jsp");
 		});		
@@ -20,13 +20,13 @@
 <div class="main">
 	<h1>Пятнашки</h1>
 	<table id="table">
-		<jsp:include page="../part.jsp" />
+		<jsp:include page="/part.jsp" />
 	</table>
 	<form action="mix">
 		<input type="submit" value="Перемешать">
 	</form>
 	<div id="winTitle">
-		<jsp:include page="../part2.jsp" />
+		<jsp:include page="/part2.jsp" />
 	</div>
 	</div>
 </body>

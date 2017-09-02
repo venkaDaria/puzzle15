@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import ua.nure.pydorenko.Puzzle15.model.Puzzle;
 
-@WebServlet("/puzzle")
+@WebServlet({"/puzzle", ""})
 public class StartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -28,6 +28,7 @@ public class StartServlet extends HttpServlet {
 			session.setAttribute("solved", false);
 			session.setAttribute("num", 0);
 		}
+
 		getServletContext().getRequestDispatcher("/WEB-INF/puzzle.jsp").forward(request, response);
 	}
 

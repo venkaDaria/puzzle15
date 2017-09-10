@@ -3,5 +3,5 @@
 
 target/
 
+!target/dependency/webapp-runner.jar
 !target/*.war
-!target/*.jar

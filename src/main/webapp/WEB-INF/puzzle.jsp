@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Пятнашки</title>
 <link rel="stylesheet" href="main.css" />
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	function move(wid, hid) {
 		$.get("move?wid=" + wid + "&hid=" + hid, function() {
